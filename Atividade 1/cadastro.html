@@ -1,0 +1,40 @@
+<!--
+    Disc. Programação Web I
+    Prof. Paulo Ewerton 
+    Aluno: Jonas Nunes-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="=utf-8" />
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="tela.png">
+    <link href="./estilo/estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./controljs/validacao.js"> </script>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form name='formulario' action='#' onsubmit="validar()">
+        <h3>Cadastrar nos Cursos</h3>
+        Nome: <input type="text" name="nome" placeholder="Nome completo" />
+        Endereco: <input type="text" name="endereco" placeholder="Endereço" />
+        Cidade: <input type="text" name="cidade" placeholder="Cidade" />
+        CEP: <input type="number" name="cep" placeholder="CEP" />
+        UF: <input type="text" name="uf" placeholder="UF" />
+        DATA: <input type="date" name="data" placeholder="Data de Nascimento" />
+        <input type="submit" />
+    </form>
+
+</body>
+
+</html>

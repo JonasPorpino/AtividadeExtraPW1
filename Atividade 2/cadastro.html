@@ -1,0 +1,49 @@
+<!--
+    Disc. Programação Web I
+    Prof. Paulo Ewerton 
+    Aluno: Jonas Nunes-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="=utf-8" />
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="tela.png">
+    <link href="./estilo/estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./controljs/validacao.js"> </script>
+    <script type="text/javascript" src="./controljs/validacao2.js"> </script>
+
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form name='formulario' action='#' onsubmit="validar()">
+            Atividade: <input type="text" name="atividade" placeholder="Atividade" />
+            DATA: <input type="date" name="data" placeholder="Data de Nascimento" />
+            <input type="submit" />
+        </form>
+    </div>
+
+    <br />
+
+    <div>
+        <form name='formulario2' action='#' onsubmit="validar2()">
+            E-mail: <input type="text" name="nome" placeholder="Nome completo" />
+            Senha: <input type="password" name="senha" placeholder="Senha" />
+            <input type="submit" />
+        </form>
+    </div>
+
+</body>
+
+</html>
